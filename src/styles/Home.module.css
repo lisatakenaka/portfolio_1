@@ -1,1 +1,43 @@
-.main {}
+.header {
+  background-color: #caa6a6;
+}
+
+.nav {
+  color: white;
+  max-height: 80px;
+  padding: 1rem 2.5rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.8;
+  justify-content: flex-end;
+  max-width: 1280px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1280px;
+  padding: 5rem 2.5rem 0;
+  margin: 0 auto;
+  color: #334155;
+}
+
+.footer {
+  min-height: 60px;
+  background-color: #caa6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-light {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: Murecho;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.8px;
+  letter-spacing: 4.4px;
+}
