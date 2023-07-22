@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 
@@ -29,8 +30,128 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <main className={`${styles['main']}`}>
-        <p>りさ</p>
+      <main className={styles['main']}>
+        <section className={styles['fist-view']}>
+          <figure className={styles['image-container']}>
+            <Image src='/Image/top画像.png' fill sizes='100%' alt='' className={styles['image']} />
+          </figure>
+          <h1 className={styles['heading-1']}>My Portfolio</h1>
+        </section>
+        <section className={styles['about']}>
+          <h2 className={styles['heading-2']}>
+            ABOUT
+            <p className={styles['sub-heading']}>私について</p>
+          </h2>
+          <div className={styles['about-container']}>
+            <figure className={styles['my-fot']}>
+              <Image
+                src='/Image/IMG_7774 1.png'
+                fill
+                sizes='100%'
+                alt='顔写真'
+                className={styles['my-fot-image']}
+              />
+            </figure>
+            <div className={styles['about-message']}>
+              <h3 className={styles['heading-3']}>LISA TAKENAKA</h3>
+              <p className={styles['about-text']}>
+                ファッションデザイン学科卒業後、
+                <br />
+                通信業界やITソリューション業界(法人営業)を経験。
+                <br />
+                2023年2月からKCC名古屋校でWEBデザイナー学科に入校。
+                <br />
+                現在はJavaScript/Reactについて学んでいます。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className={styles['skill']}>
+          <h2 className={styles['heading-2']}>
+            SKILL
+            <p className={styles['sub-heading']}>技能</p>
+          </h2>
+          <ul className={styles['skill-container']}>
+            <li className={styles['skill-card']}>
+              <figure className={styles['skill-image-container']}>
+                <Image
+                  src='/Image/skil1.png'
+                  fill
+                  sizes='100%'
+                  alt=''
+                  className={styles['skill-image']}
+                />
+              </figure>
+              <div>
+                <h3 className={styles['heading-3']}>Illustrator</h3>
+                <p className={styles['skill-text']}>
+                  勉強方法：スクール授業
+                  <br />
+                  ロゴ、チラシ、バナー、イラストの
+                  <br />
+                  文字数が多いデザインに使用
+                </p>
+              </div>
+            </li>
+            <li className={styles['skill-card']}>
+              <figure className={styles['skill-image-container']}>
+                <Image
+                  src='/Image/skil2.png'
+                  fill
+                  sizes='100%'
+                  alt=''
+                  className={styles['skill-image']}
+                />
+              </figure>
+              <div>
+                <h3 className={styles['heading-3']}>Illustrator</h3>
+                <p className={styles['skill-text']}>
+                  勉強方法：スクール授業
+                  <br />
+                  細かな写真の加工に使用
+                </p>
+              </div>
+            </li>
+            <li className={styles['skill-card']}>
+              <figure className={styles['skill-image-container']}>
+                <Image
+                  src='/Image/skil3.png'
+                  fill
+                  sizes='100%'
+                  alt=''
+                  className={styles['skill-image']}
+                />
+              </figure>
+              <div>
+                <h3 className={styles['heading-3']}>Illustrator</h3>
+                <p className={styles['skill-text']}>
+                  勉強方法：スクール授業
+                  <br />
+                  HTML、CSSを使用
+                </p>
+              </div>
+            </li>
+            <li className={styles['skill-card']}>
+              <figure className={styles['skill-image-container']}>
+                <Image
+                  src='/Image/skil4.png'
+                  fill
+                  sizes='100%'
+                  alt=''
+                  className={styles['skill-image']}
+                />
+              </figure>
+              <div>
+                <h3 className={styles['heading-3']}>Illustrator</h3>
+                <p className={styles['skill-text']}>
+                  勉強方法：スクール授業
+                  <br />
+                  デザインカンプ作成時に使用
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer className={styles['footer']}>
         <p className={styles['copy-light']}>Copyright © 2023 Y pjt All rights reserved,</p>

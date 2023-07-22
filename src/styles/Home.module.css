@@ -1,3 +1,7 @@
+/* ========================
+header
+======================== */
+
 .header {
   background-color: #caa6a6;
 }
@@ -16,13 +20,151 @@
   max-width: 1280px;
 }
 
+/* ========================
+main
+======================== */
+
 .main {
   width: 100%;
   max-width: 1280px;
-  padding: 5rem 2.5rem 0;
+  padding: 0 2.5rem;
   margin: 0 auto;
   color: #334155;
 }
+
+/* ========================
+firstView
+======================== */
+.fist-view {
+  margin: 0 calc(50% - 50vw);
+  height: 455px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-1 {
+  color: #fff;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.image {
+  object-fit: fill;
+}
+
+/* ========================
+about
+======================== */
+.about {
+  margin: 0 calc(50% - 50vw);
+  padding: 80px calc(50vw - 50%);
+  background-color: #e5e5e5;
+}
+
+.heading-2 {
+  color: #876464;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 8.8px;
+}
+
+.sub-heading {
+  font-size: 20px;
+  letter-spacing: 4.4px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.my-fot {
+  position: relative;
+  height: 458px;
+  aspect-ratio: 1/1;
+}
+
+.my-fot-image {
+  object-fit: contain;
+}
+
+.about-message {
+  text-align: center;
+}
+
+.heading-3 {
+  color: #414141;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-text {
+  margin-top: 40px;
+  color: #414141;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* ========================
+skill
+======================== */
+
+.skill {
+  margin: 0 calc(50% - 50vw);
+  padding: 80px calc(50vw - 50%);
+  background-color: #dbc4bb;
+}
+
+.skill-container {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  row-gap: 40px;
+}
+
+.skill-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.skill-image-container {
+  position: relative;
+  aspect-ratio: 1/1;
+  height: 139px;
+}
+
+.skill-text {
+  color: #414141;
+  line-height: normal;
+  letter-spacing: 2.56px;
+}
+
+/* ========================
+footer
+======================== */
 
 .footer {
   min-height: 60px;
